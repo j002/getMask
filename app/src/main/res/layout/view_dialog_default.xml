@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    tools:background="#000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_content"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_authentification_margin_start"
+        android:layout_marginEnd="@dimen/default_authentification_margin_end"
+        android:background="@drawable/dialog_rounded_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/default_authentification_margin_start"
+        android:layout_marginRight="@dimen/default_authentification_margin_end">
+
+
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_21sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Ajouter des masque"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:textAlignment="textStart"
+            android:lineHeight="@dimen/_18sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/_21sdp"
+            android:layout_marginRight="@dimen/_11sdp"
+            android:gravity="start" />
+
+        <EditText
+            android:textStyle="bold"
+            android:textColorHint="@color/brownish_grey"
+            android:id="@+id/et_number_mask"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/background_edit_text"
+            android:hint="Entrer le nombre de masque"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_21sdp"
+            android:layout_marginStart="@dimen/_21sdp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_dialog" />
+
+
+        <TextView
+            android:id="@+id/dialog_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:focusable="true"
+            android:clickable="true"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:text="OK"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_number_mask"
+            app:layout_constraintTop_toBottomOf="@+id/et_number_mask" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

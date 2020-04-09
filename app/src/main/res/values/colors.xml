@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E35E34</color>
+    <color name="colorPrimaryDark">#DA8266</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorOrange">#E35E34</color>
+    <color name="redErrorColorFlashBar">#E35E34</color>
+    <color name="black">#000000</color>
+    <color name="sand_brown">#cb995f</color>
+    <color name="white">#fff</color>
+    <color name="dark">#14161a</color>
+    <color name="transparent">#68000000</color>
+    <color name="white_15">#26ffffff</color>
+    <color name="camel">#66c1935f</color>
+    <color name="camel_two">#c1935f</color>
+    <color name="white_grey">#99ffffff</color>
+    <color name="white_grey_two">#ccffffff</color>
+    <color name="brownish_grey">#626262</color>
+    <color name="transparent_status_bar_old_api">#68000000</color>
+    <color name="very_light_pink">#ededed</color>
+    <color name="dialog_background">#be260000</color>
+    <color name="brown_grey">#848484</color>
+    <color name="greyish_brown">#4b4b4b</color>
+    <color name="very_light_pink_two">#d0d0d0</color>
+    <color name="very_light_blue_two">#00E2FF</color>
+</resources>

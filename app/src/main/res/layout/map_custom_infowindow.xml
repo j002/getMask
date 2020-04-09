@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_windows_info"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name_aroud"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/mask" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_adress_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp" />
+
+
+        <TextView
+            android:id="@+id/tv_tel_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp" />
+
+        <Button
+            android:id="@+id/btn_blizz_around_store"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_btn_orange"
+            android:text="Contacter"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-1dp"
+        android:src="@drawable/triangle" />
+</LinearLayout>

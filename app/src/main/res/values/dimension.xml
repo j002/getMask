@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="default_authentification_margin_start">@dimen/_30sdp</dimen>
+    <dimen name="default_authentification_margin_end">@dimen/_30sdp</dimen>
+    <dimen name="default_view_height">@dimen/_40sdp</dimen>
+    <dimen name="default_field_choose_at_register_height">@dimen/_42sdp</dimen>
+</resources>

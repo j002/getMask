@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.fr.getmymask.custom.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_relative_layout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_containt_map"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/match_constraint"
+            android:background="@drawable/shadow_maps"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NestedWeights" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_around"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/match_constraint"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_show_list"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_containt_map" />
+
+        <Button
+            android:id="@+id/btn_show_list"
+            android:layout_width="152dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_btn_orange"
+            android:text="@string/ajouter_des_masques"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.app.fr.getmymask.custom.MapWrapperLayout>
